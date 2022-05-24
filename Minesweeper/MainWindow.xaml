@@ -15,7 +15,7 @@
                 <Grid x:Name="GridBoard" Width="460" Height="460" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             </Border>
             <Button x:Name="ButtonReset" Content="X" Margin="0,10,0,485" Click="Button_Click" HorizontalAlignment="Center" Width="43"/>
-            <ComboBox x:Name="CbDifficulty" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBox x:Name="CbDifficulty" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" IsEnabled="False" Visibility="Hidden">
                 <ComboBoxItem Content="Easy"/>
                 <ComboBoxItem Content="Medium"/>
                 <ComboBoxItem Content="Hard"/>

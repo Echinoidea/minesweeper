@@ -24,7 +24,7 @@ namespace Minesweeper
         public MainWindow()
         {
             InitializeComponent();
-            Game.InitGame(0);
+            Game.InitGame(1);
             InitializeBoard();
         }
 
@@ -91,6 +91,8 @@ namespace Minesweeper
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Game.Reset();
+            Reset();
             Console.WriteLine(CbDifficulty.SelectedIndex.ToString());
             Game.InitGame(CbDifficulty.SelectedIndex);
             InitializeBoard();

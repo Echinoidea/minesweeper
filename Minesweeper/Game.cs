@@ -21,7 +21,7 @@ namespace Minesweeper
         public static Board GameBoard;
 
         public static void InitGame(int d)
-        {
+        { 
             switch (d)
             {
                 case 0:
